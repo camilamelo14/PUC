@@ -1,0 +1,40 @@
+Introdução (Cris) : Slide1 (30s)
+Boa tarde, eu, Daniel e Camila estamos aquí para realizar a defesa de nosso Trabalho de Conclusão de Curso.
+
+Fases da análise (Cris): Slide 2 e 3 (2m 30s)
+Escolha do tema:
+A definição do tema do trabalho se deu em resultado a uma maratona de dados DATATHON no ano de 2018 (https://www.desafiodedados.com.br/), nossa equipe nesta época optou por este assunto, pois identificamos que havia uma falta de suporte/análises sobre o tema no país e também identificamos um potencial de retorno significativo em relação aos estudos sobre a saúde mental no país. na época iniciamos os estudos com os dados do DATASUS e para o nossa TCC definimos uma análise mundial referente ao tema e utilizamos os dados do The Institute for Health Metrics and Evaluation (IHME), World Health Statistics (WHO), Data World Bank e trabalhos qualitativos para análise inicial do nosso trabalho, o período estudado foi de 1990 à 2017.
+
+Neste trabalho levantamos também que os dados referentes ao indicadores. de suicídio  podem não representar com sua completude a realidade em muitos países, como mostra na imagem ao lado.
+
+Coleta dos dados (Camila): Slide 4 (1m)
+    Nesta etapa do projeto procuramos em inúmeras fontes de dados públicos e encontramos as quais gostaríamos de trabalhar, já nesta etapa havíamos estudado a respeito de uma possível correlação das taxas de suicídio em países/estados mais frios, desta forma trabalhamos em agrupar os dados de suicídio junto aos dados de temperatura. 
+
+Tratamento dos dados (Camila): Slide 5 (1m)
+    Para esta atividade foi necesário cruzar os dados com dois datasets que encontramos, além disso cruzamos também os dados de latitude e longitude para montagem das representações em mapas no Tableu, tratamos também os dados duplicados e inexistentes.
+
+Análise exploratória e Comparação dos dados (Cris): Slide 5 (1m)
+    Neste momento já podíamos avaliar algumas métricas, tais como:
+    
+    1. Os países com mair taxa de suicídio a cada 100 mil habitantes no mundo;
+    2. Idade mais acometida pelo suicídio no mundo;
+    
+    Estes indicadores já nos impulsionou à incluir os dados do Data World Bank em nosso trabalho para incluir os indicadores econômicos mundiais para aplicação de modelo de Machine Learning.
+
+Criação do modelo de ML (Dani): Slide 8 e 9 (3m)
+O modelo foi criado utilizando dados generalistas, utilizando dados financeiros e média de temperatura do país. 
+Considerando o crescimento do PIB e análises da alteração da inflação do ano, tentamos prever a quantidade de suícidios durante o ano. 
+Ficamos em dúvida sobre apresentar um modelo de regressão e classificação. Classificação apenas se os indices indicariam aumento ou 
+redução da taxa de suícidio. Optamos para utilização de um modelo de regressão para tentarmos prever a taxa aproximada. Devido a
+generalização dos dados, insuficiência de atributos, não foi houve um resultado satisfatório. 
+
+Utilizamos os algoritmos:
+    Regressão Linear
+    Um regressor baseado em SVM
+
+Utilizamos a técnica de Grid Search para aplicar alternancia de parâmetros no regressor do SVM para redução do erro.
+A métrica para avaliação foi o erro quadrático médio
+
+
+Interpretação dos resultados (Tableu) - (Camila/Cris): (1m no Máximo)
+    <APRESENTAR ALGUNS DASHBOARDS MAIS IMPORTANTES E MOSTRAR QUE NOSSO GRAFICO FICOU DINÂMICO>
